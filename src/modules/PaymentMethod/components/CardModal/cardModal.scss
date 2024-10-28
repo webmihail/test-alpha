@@ -1,0 +1,80 @@
+@use "modules/common/globalStyles/media";
+
+.app-modal-container {
+  position: relative;
+  padding: 0 24px 24px;
+
+  @include media.size(medium) {
+    padding: 42px 24px 24px;
+  }
+}
+
+.modal-balance {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+  background: var(--blue);
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 800;
+
+  @include media.size(medium) {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    font-size: 16px;
+    line-height: 21px;
+    border-radius: 0;
+  }
+}
+
+.modal-balance-value {
+  font-size: 18px;
+  font-weight: 900;
+  margin: 2px 6px 0;
+
+  @include media.size(medium) {
+    font-size: 24px;
+    margin: 0 6px;
+  }
+}
+
+.modal-content-wrapper {
+  padding-top: 18px;
+
+  @include media.size(medium) {
+    padding-top: 24px;
+  }
+}
+
+.modal-button-wrapper {
+  margin-top: 30px;
+}
+
+.app-modal-promo-wrapper {
+  & > h3 {
+    font-size: 16px;
+    flex-direction: row;
+
+    @include media.size(medium) {
+      font-size: 18px;
+    }
+  }
+
+  & form {
+    & > div:first-child {
+      width: 100%;
+    }
+
+    & button {
+      width: 85px;
+
+      @include media.size(medium) {
+        width: 152px;
+      }
+    }
+  }
+}

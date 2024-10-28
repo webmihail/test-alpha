@@ -1,0 +1,55 @@
+:root {
+  font-family: Avenir, Inter, system-ui, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--white);
+  background-color: var(--dark);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  // colors
+  --white: #FFFFFF;
+  --red: #FC3D40;
+  --red-v2: #F9484B;
+  --blue: #2D69EB;
+  --light-blue: #4C84FF;
+  --dark: #20242A;
+  --gray: #30363E;
+  --light-dark: #21262C;
+  --gray-dark: #30363E;
+  --black: #0000000D;
+  --black-v1: #00000005;
+  --black-v2: #000000B8;
+  --black-v3: #000000CC;
+  --black-v4: #1C1A1A;
+  --yellow: #C69516;
+  --green: #00BA61;
+  --dark-blue: #2658D7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 32px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+h4 {
+  font-weight: 500;
+  line-height: 24px;
+}

@@ -1,0 +1,10 @@
+@use "modules/common/globalStyles/media";
+
+.layout-container {
+  position: relative;
+  padding: 52px 18px 18px;
+
+  @include media.size(medium) {
+    padding: 74px 24px 24px;
+  }
+}

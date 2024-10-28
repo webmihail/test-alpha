@@ -1,0 +1,67 @@
+@use "modules/common/globalStyles/media";
+
+.header-menu-container {
+  position: fixed;
+  width: 100%;
+  height: 64px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  background-color: var(--dark);
+  box-shadow: 0 2px 7px 0 var(--black-v2);
+  z-index: 3;
+
+  @include media.size(medium) {
+    height: 84px;
+    padding: 0 24px;
+  }
+}
+
+.header-menu-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+
+  @include media.size(medium) {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.header-right-menu {
+  display: flex;
+  align-items: center;
+}
+
+.header-btn-wrapper {
+  position: relative;
+  margin: 0 10px;
+  display: none;
+
+  & button {
+    line-height: 10px;
+  }
+
+  @include media.size(medium) {
+    display: block;
+  }
+}
+
+.marker:before {
+  content: ".";
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--red-v2);
+  position: absolute;
+  right: 2px;
+  top: -5px;
+}
+
+.header-user-icon {
+  display: none;
+
+  @include media.size(medium) {
+    display: block;
+  }
+}

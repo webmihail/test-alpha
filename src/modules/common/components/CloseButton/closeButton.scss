@@ -1,0 +1,33 @@
+.close-btn {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &::after,
+  &::before {
+    content: "";
+    width: 12px;
+    height: 2px;
+    background: var(--white);
+    position: absolute;
+    top: 9px;
+    left: 4px;
+    border-radius: 10px;
+  }
+
+  &::after {
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    transform: rotate(-45deg);
+  }
+}
+
+.close-btn.circled {
+  border: 2px solid var(--white);
+}

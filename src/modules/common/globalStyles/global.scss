@@ -1,0 +1,25 @@
+@use "modules/common/globalStyles/media";
+
+.container-wrapper {
+  margin: 40px auto;
+
+  @include media.size(medium) {
+    max-width: 1200px;
+  }
+}
+
+.container-title {
+  margin: 16px 0 0;
+}
+
+.container-subtitle {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 0;
+
+  @include media.size(medium) {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,23 @@
+.arrow {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    top: 40%;
+    left: 0;
+    background-color: var(--white);
+    border-radius: 4px;
+  }
+
+  &::before {
+    transform: rotate(45deg) translateX(44%);
+  }
+
+  &::after {
+    transform: rotate(-45deg) translateX(44%);
+  }
+}

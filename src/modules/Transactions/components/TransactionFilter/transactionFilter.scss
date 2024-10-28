@@ -1,0 +1,38 @@
+@use "modules/common/globalStyles/media";
+
+.transaction-filter-select {
+  &__control {
+    margin-top: 14px;
+    height: 40px;
+    border: none!important;
+    border-radius: 9px!important;
+    cursor: pointer!important;
+    background-color: var(--gray-dark)!important;
+    box-shadow: 4px 4px 5px 0 var(--black), -5px 0px 5px 0px var(--black-v1);
+  }
+
+  &__indicator-separator {
+    display: none;
+  }
+
+  &__option {
+    cursor: pointer!important;
+    &--is-focused {
+      background-color: var(--blue) !important;
+    }
+    &--is-selected {
+      background-color: var(--blue) !important;
+    }
+  }
+
+  &__menu {
+    border-radius: 9px!important;
+    background-color:  var(--gray-dark)!important;
+  }
+}
+
+.transaction-filter-custom-option {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+}

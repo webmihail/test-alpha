@@ -1,0 +1,19 @@
+.tag-popular, .tag-trusted {
+  width: 78px;
+  height: 16px;
+  font-size: 8px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 16px;
+  position: absolute;
+  border-radius: 2px;
+  top: -8px
+}
+
+.tag-popular {
+  background-color: var(--blue);
+}
+
+.tag-trusted {
+  background-color: var(--red);
+}

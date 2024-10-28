@@ -1,0 +1,70 @@
+@use "modules/common/globalStyles/media";
+
+.burger-btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65px;
+
+  @include media.size(medium) {
+    width: 75px;
+  }
+}
+
+.burger-btn {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  background: none;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover {
+    .burger-btn-view {
+      width: 18px;
+    }
+  }
+}
+
+.burger-btn-view {
+  height: 2px;
+  width: 12px;
+  position: absolute;
+  background-color: var(--white);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+
+  &::before,
+  &::after {
+    content: '';
+    border-radius: 10px;
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background-color: var(--white);
+  }
+
+  &::before {
+    top: -6px;
+    left: 0;
+  }
+
+  &::after {
+    top: 6px;
+    left: 0;
+  }
+}
+
+.burger-menu-logo {
+  width: 26px;
+  height: 32px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+
+  @include media.size(medium) {
+    width: 34px;
+    height: 42px;
+  }
+}

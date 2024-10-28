@@ -1,0 +1,43 @@
+@use "modules/common/globalStyles/media";
+
+.transaction-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transaction-filer-btn-wrapper {
+  width: 35px;
+
+
+  @include media.size(medium) {
+    width: 40px;
+  }
+}
+
+.filter-icon {
+  margin-top: 8px;
+  width: 18px;
+  height: 18px;
+
+  @include media.size(medium) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.transaction-button-wrapper {
+  width: 100%;
+  margin: 24px auto;
+
+  @include media.size(medium) {
+    width: 280px;
+  }
+}
+
+.transaction-filter {
+  height: 40px;
+  margin-top: 20px;
+  background-color: var(--light-dark);
+  border: 1px solid var(--gray-dark);
+}
